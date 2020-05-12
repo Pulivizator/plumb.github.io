@@ -1,0 +1,1234 @@
+/*----------------------------------------------------------------------------------
+ 1. body start
+----------------------------------------------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #777777;
+	line-height: 1.42857143;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+}
+/*=====preloaer css Start=====*/
+.preloader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fff;
+    text-align: center;
+}
+.preloader_inner {
+    margin: auto;
+    width:65px;
+    height:65px;
+    position:absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.preloader_inner img{
+	max-width:100%;
+	display:inline-block;
+}
+/*=====preloaer css Start=====*/
+/*----------------------------------------------------------------------------------
+ 1. body end
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 2. common css Start
+----------------------------------------------------------------------------------*/
+/*===== section heading Start =====*/
+.section_heading{
+	float:left;
+	width:100%;
+	text-align:center;
+	margin-bottom:50px;
+}
+.section_heading h3 {
+    font-size: 25px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2c97df;
+	margin-top: 0;
+    margin-bottom: 8px;
+}
+.section_heading .mdl_icon {
+    margin-bottom: 14px;
+}
+.section_heading img {
+    display: inline-block;
+}
+.section_heading p{
+    font-size: 16px;
+    letter-spacing: 0.04em;
+	line-height:30px;
+    color: #555555;
+	margin-bottom:0;
+}
+/*===== section heading end ===== */
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+button:focus, input:focus, button:focus{
+	outline:none;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+}
+input, button, a{
+	transition:all ease-in 0.25s;
+	-webkit-transition:all ease-in 0.25s;
+	-moz-transition:all ease-in 0.25s;
+}
+::selection {
+	background: #2c97df;
+	color: #ffffff;
+}
+h1, h2, h3, h4, h5{
+	font-family: 'Roboto Slab', serif;
+}
+.full_width{
+	float:left;
+	width:100%;
+}
+.col_50{
+	width:50%;
+	float:left;
+}
+.width_41{
+	width:40%;
+	float:left;
+}
+.width_59{
+	width:60%;
+	float:left;
+}
+/*----------------------------------------------------------------------------------
+ 2. common css end
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 3. header top css Start
+----------------------------------------------------------------------------------*/
+.header_top {
+    float: left;
+    width: 100%;
+    background-color:#151515;
+    padding: 10px 0;
+}
+.header_top ul {
+	padding:0;
+	list-style:none;
+	margin-bottom: 0;
+	float: left;
+	width: 100%;
+}
+.left_contact > li{
+    float: left;
+    margin-right: 15px;
+}
+.left_contact li i{
+    margin: 0 5px 0 0;
+    display: inline-block;
+    color: #fff;
+}
+.left_contact li p, 
+.left_contact li a {
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    line-height: 30px;
+    text-decoration:none;
+    margin-bottom:0px;
+    display: inline-block;
+}
+.left_contact li a:hover {
+    color: #2c97df;
+}
+.header_top .social_icon{
+	text-align:right;
+}
+.social_icon{
+	list-style:none;
+	padding-left:0;
+	margin-bottom:0;
+}
+.social_icon li {
+    display: inline-block;
+}
+.social_icon li > a {
+    padding: 5px;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+}
+.social_icon li > a:hover{
+	color:#2c97df;
+}
+/*----------------------------------------------------------------------------------
+ 3. header top css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 4. header menu css Start
+----------------------------------------------------------------------------------*/
+.pl_header_section {
+    width: 100%;
+    display: inline-block;
+    padding: 0px 0;
+    position: relative;
+    z-index: 11;
+    background-color: #212121;
+}
+.pl_logo {
+    padding-top: 17px;
+}
+.pl_logo > a{
+	display:inline-block;
+}
+.middle_menu{
+}
+.middle_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.middle_menu ul.menu{
+	text-align:right;
+}
+.middle_menu > ul > li {
+    display: inline-block;
+    position: relative;
+    padding: 35px 15px;
+}
+.middle_menu > ul > li > a {
+    font-size: 17px;
+    line-height: 20px;
+    display: block;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    /* margin: 6px 20px; */
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.middle_menu > ul > li > a:hover {
+    color: #2c97df;
+}
+/*===== sub Menu css start =====*/
+.middle_menu > ul > li > ul {
+    position: absolute;
+    background-color: #fff;
+    border-top: 3px solid #2c97df;
+	text-align:left;
+    min-width: 200px;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s;
+    -moz-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s;
+    -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(-10%, 0px);
+    -moz-transform: translate(-10%, 0px);
+    -ms-transform: translate(-10%, 0px);
+    -o-transform: translate(-10%, 0px);
+    transform: translate(-10%, 0px);
+}
+.middle_menu > ul > li > ul > li {
+    width: 100%;
+    line-height: 33px;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 4px 16px;
+}
+.middle_menu > ul > li > ul > li > a {
+    white-space: nowrap;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #151515;
+    text-decoration: none;
+}
+.middle_menu > ul > li > ul > li > a:hover {
+    color: #2c97df;
+}
+.middle_menu > ul > li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(0%, 0px);
+    -moz-transform: translate(0%, 0px);
+    -ms-transform: translate(0%, 0px);
+    -o-transform: translate(0%, 0px);
+    transform: translate(0%, 0px);
+}
+/*===== sub Menu css end =====*/
+
+/*====header search ====*/
+.search_right {
+    position: relative;
+}
+.search_right .pc_input_section {
+    width: 100%;
+}
+.search_right input {
+    width: 100% !important;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid;
+    font-size: 14px;
+    color: #ffffff;
+}
+.search_right .search_btn {
+    position: absolute;
+    right: 4px;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    line-height: 35px;
+}
+/*====header search ====*/
+/*----------------------------------------------------------------------------------
+4. header css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 5. Slider css Start
+----------------------------------------------------------------------------------*/
+/*==== slider caption css start ====*/
+.home_banner_section {
+	float:left;
+    height:60%;
+	width:100%;
+	position:relative;
+	z-index:1;
+	background-image: url(http://www.santehnik.ks.ua/wp-content/uploads/2018/05/first-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+}
+.home_banner_section:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.58);
+    z-index: -1;
+}
+.banner_slider {
+    float: left;
+    width: 100%;
+}
+.slider_caption {
+    float: left;
+    width: 100%;
+    padding: 150px 0 40px;
+	text-align:center;
+}
+.slider_caption h2 {
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: 0.03em;
+}
+.slider_caption h1 {
+    color: #2c97df;
+    font-size: 52px;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 18px;
+}
+.feature_list {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+    float: left;
+    width: 100%;
+}
+.feature_list > li{
+	float:left;
+	width:100%;
+	margin-bottom:15px;
+}
+.feature_list li > div {
+    display: table-cell;
+}
+.feature_list li i {
+    color: #2c97df;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-right: 10px;
+    display: table-cell;
+    vertical-align: top;
+}
+.feature_list li p {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 0;
+    display: table-cell;
+}
+ .read_more {
+    padding: 10px 50px;
+    display: inline-block;
+    background-color: #2c97df;
+    color: #fffefe;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-decoration: none;
+    line-height: 28px;
+    border-radius: 2em;
+    border: 1px solid transparent;
+}
+.read_more:hover, 
+.read_more:focus{
+	text-decoration:none;
+	background-color:transparent;
+	color:#2c97df;
+	border: 1px solid;
+}
+.slider_caption .slider_btn{
+	margin-top:25px;
+}
+.slider_btn > div {
+    display: inline-block;
+}
+.slider_btn .read_more{
+    margin: 10px 20px 0 0;
+}
+/*==== slider caption css end ====*/
+
+/*==== slider dots css start ====*/
+.banner_slider .owl-controls{
+	margin:30px 0px 50px;
+}
+.owl-dots{
+	text-align:center;
+}
+.owl-dots .owl-dot {
+    display: inline-block;
+}
+.owl-dots .owl-dot span {
+    float:left;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    border: 2px solid #2c97df;
+	margin: 4px;
+}
+.banner_slider .owl-dot span {
+    border: 2px solid #ffffff;
+}
+.owl-dots .owl-dot.active span {
+    background-color: #2c97df;
+	border-color:transparent;
+}
+/*==== slider dots css end ====*/
+/*==== slider caption animation css start ====*/
+.owl-item.active .slider_caption h2{
+	animation:fromleft 1s 1 both .3s;
+	-webkit-animation:fromleft 1s 1 both .3s;
+	-moz-animation:fromleft 1s 1 both .3s;
+}
+.owl-item.active .slider_caption h1{
+	animation:rotate 1s 1 both .9s;
+	-webkit-animation:rotate 1s 1 both .9s;
+	-moz-animation:rotate 1s 1 both .9s;
+}
+.owl-item.active .feature_list > li{
+	animation:flipin 1s 1 both 1.5s;
+	-webkit-animation:flipin 1s 1 both 1.5s;
+	-moz-animation:flipin 1s 1 both 1.5s;
+}
+.owl-item.active .feature_list > li:nth-child(2){
+	animation-delay:1.8s;
+	-webkit-animation-delay:1.8s;
+	-moz-animation-delay:1.8s;
+}
+.owl-item.active .feature_list > li:nth-child(3){
+	animation-delay:2.1s;
+	-webkit-animation-delay:2.1s;
+	-moz-animation-delay:2.1s;
+}
+.owl-item.active .feature_list > li:nth-child(4){
+	animation-delay:2.4s;
+	-webkit-animation-delay:2.4s;
+	-moz-animation-delay:2.4s;
+}
+.owl-item.active .feature_list > li:nth-child(5){
+	animation-delay:2.7s;
+	-webkit-animation-delay:2.7s;
+	-moz-animation-delay:2.7s;
+}
+.owl-item.active .feature_list > li:nth-child(5){
+	animation-delay:3s;
+	-webkit-animation-delay:3s;
+	-moz-animation-delay:3s;
+}
+.owl-item.active .slider_btn{
+	animation:frombottom 1s 1 both 1.5s;
+	-webkit-animation:frombottom 1s 1 both 1.5s;
+	-moz-animation:frombottom 1s 1 both 1.5s;
+}
+/*==== slider caption animation css end ====*/
+/*----------------------------------------------------------------------------------
+ 5. Slider css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 6. about section css start
+----------------------------------------------------------------------------------*/
+.pl_about_section {
+    background-color: #ffffff;
+    float: left;
+    width: 100%;
+    padding: 80px 0 50px;
+}
+.box_cover {
+    float: left;
+    width: 100%;
+}
+.about_box {
+    padding: 20px;
+    color: #999999;
+    border: 1px solid #eaeaea;
+    margin-bottom: 30px;
+}
+.about_box .box_title {
+    padding-bottom: 12px;
+}
+.about_box .box_title > div {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 27px;
+}
+.box_title .box_icon {
+    padding-right: 15px;
+    font-size: 37px;
+    color: #2c97df;
+}
+.about_box .box_title h4 {
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    color: #151515;
+    margin: 0;
+    line-height: 25px;
+}
+.about_box p {
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+    margin-bottom: 0px;
+    color: #777;
+}
+/*----------------------------------------------------------------------------------
+ 5. about section css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 6. Service section css start
+----------------------------------------------------------------------------------*/
+.home_service_section {
+	float:left;
+	width:100%;
+	padding-top:80px;
+	position:relative;
+	background-image: url(../images/bg/service_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+}
+.home_service_section .section_heading h3, 
+.home_service_section .section_heading p{
+	color:#ffffff;
+}
+.service_box {
+    margin-bottom: 80px;
+    text-align: center;
+    overflow: hidden;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service_thumb{
+	position:relative;
+}
+.service_thumb img{
+	display:inline-block;
+}
+.service_box .service_desc {
+    position: absolute;
+    bottom: -35%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    transition: all ease-in-out 0.25s;
+    -webkit-transition: all ease-in-out 0.25s;
+    -moz-transition: all ease-in-out 0.25s;
+    padding: 20px;
+}
+.service_desc h4 {
+	font-size: 20px;
+	letter-spacing: 0.03em;
+	font-weight: 700;
+	color:#000000;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	transition: all ease-in-out 0.25s;
+    -webkit-transition: all ease-in-out 0.25s;
+    -moz-transition: all ease-in-out 0.25s;
+}
+.service_desc p {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 0;
+    color: #f5f5f5;
+}
+.service_box:hover .service_desc {
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+.service_box:hover .service_desc h4 {
+    color: #ffffff;
+}
+/*----------------------------------------------------------------------------------
+ 6. Service section css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 7. about second css start
+----------------------------------------------------------------------------------*/
+.about_second_cover{
+	float:left;
+	width:100%;
+}
+.left_content {
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+}
+.left_content h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #151515;
+    margin: 10px 0 15px;
+}
+.left_content p {
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #555555;
+}
+.about_thumb {
+    float: left;
+    width: 100%;
+	margin-bottom:30px;
+}
+.about_thumb img{
+	display:inline-block;
+}
+.left_content .about_list{
+	padding-left: 0;
+	padding-top: 10px;
+	list-style: none;
+	margin-bottom: 0;
+}
+.left_content .about_list li {
+    margin-bottom: 5px;
+}
+.left_content .about_list li:last-child {
+    margin-bottom:0;
+}
+.left_content .about_list > li i, 
+.left_content .about_list > li h5 {
+    display: table-cell;
+    vertical-align: middle;
+}
+.left_content .about_list > li i {
+    color: #2c97df;
+    padding-right: 12px;
+}
+.left_content .about_list > li h5 {
+    font-weight: bolder;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin: 0;
+}
+/*----------------------------------------------------------------------------------
+ 7. about second css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 8. Team Section css Start
+----------------------------------------------------------------------------------*/
+.pl_team_section{
+	float:center;
+	width:100%;
+	background-color:#FFFFFF;
+	padding-top:80px;
+}
+.team_box_cover{
+	float:left;
+	width:100%;
+}
+.team_box {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.team_thumb {
+    position: relative;
+}
+.team_thumb img {
+    display: inline-block;
+    border-radius: 100%;
+}
+.team_overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background: rgba(39, 38, 38, 0.5);
+	transition: all ease-in-out 0.25s;
+    -webkit-transition: all ease-in-out 0.25s;
+    -moz-transition: all ease-in-out 0.25s;
+    visibility: hidden;
+    opacity: 0;
+    transform:scale(0.5);
+    -webkit-transform:scale(0.5);
+    -moz-transform:scale(0.5);
+    -ms-transform:scale(0.5);
+    -o-transform:scale(0.5);
+}
+.team_overlay .profession{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    width: 100%;
+}
+.team_box .profession li > a {
+    font-size: 18px;
+}
+.team_box h4 {
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    color: #444444;
+    margin-top: 21px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+	transition: all ease-in-out 0.25s;
+    -webkit-transition: all ease-in-out 0.25s;
+    -moz-transition: all ease-in-out 0.25s;
+}
+.team_box p {
+    font-size: 26px;
+    letter-spacing: 0.02em;
+    color: #00FFFF;
+	text-transform:capitalize;
+}
+.team_box:hover .team_overlay {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+.team_box:hover .profession p {
+    animation: fromleft .8s 1 both;
+    -webkit-animation: fromleft .8s 1 both;
+    -moz-animation: fromleft .8s 1 both;
+}
+
+.team_box:hover h4 {
+    color: #2c97df;
+}
+/*----------------------------------------------------------------------------------
+ 8. Team Section css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 9. Price Section css start
+----------------------------------------------------------------------------------*/
+        .pl_price_section {
+    float: left;
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.price_box {
+    float: left;
+    width: 100%;
+    border: 1px solid #eaeaea;
+    color: #888888;
+    text-align: center;
+    padding: 30px 0 40px;
+    margin-bottom: 50px;
+	-webkit-box-shadow: 3px 3px 41px -18px rgba(0,0,0,0.59);
+	-moz-box-shadow: 3px 3px 41px -18px rgba(0,0,0,0.59);
+	box-shadow: 3px 3px 41px -18px rgba(0,0,0,0.59);
+}
+.price_box h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #444444;
+    letter-spacing: 0.04em;
+    line-height: 20px;
+    margin: 0px 0px 6px;
+	-webkit-transition: all 500ms cubic-bezier(0.455, 0.030, 0.515, 0.955); 
+	-moz-transition: all 500ms cubic-bezier(0.455, 0.030, 0.515, 0.955); 
+	 -o-transition: all 500ms cubic-bezier(0.455, 0.030, 0.515, 0.955); 
+		transition: all 500ms cubic-bezier(0.455, 0.030, 0.515, 0.955); /* easeInOutQuad */
+
+	-webkit-transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955); 
+	-moz-transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955); 
+	 -o-transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955); 
+		transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955); /* easeInOutQuad */
+}
+.price_box h5{
+	font-size: 16px;
+    color: #444444;
+    letter-spacing: 0.04em;
+    line-height: 20px;
+	margin: 0;
+}
+.price_box .price {
+	color: #333333;
+	background-color:#e6e6e6;
+    padding: 30px 0;
+    letter-spacing: 0.03em;
+    font-size: 30px;
+    margin-top: 26px;
+	-webkit-transition: all 500ms cubic-bezier(0.455, 0.030, 0.515, 0.955); 
+	-moz-transition: all 500ms cubic-bezier(0.455, 0.030, 0.515, 0.955); 
+	 -o-transition: all 500ms cubic-bezier(0.455, 0.030, 0.515, 0.955); 
+		transition: all 500ms cubic-bezier(0.455, 0.030, 0.515, 0.955); /* easeInOutQuad */
+
+	-webkit-transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955); 
+	-moz-transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955); 
+	 -o-transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955); 
+		transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955); /* easeInOutQuad */
+}
+.price_feature {
+    padding: 0 25px;
+    margin-bottom: 30px;
+}
+.price_feature p {
+    font-size: 15px;
+    color: #777;
+    line-height: 20px;
+    margin: 0;
+    border-bottom: 1px solid #eaeaea;
+    padding: 28px 0;
+}
+.price_box:hover h4{
+	color:#2c97df;
+}
+.price_box:hover .price{
+	background-color:#2c97df;
+	color:#ffffff;
+}
+.price_box:hover .read_more{
+	background-color:transparent;
+	color:#2c97df;
+	border:1px solid;
+}
+/*----------------------------------------------------------------------------------
+ 9. Price Section css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 10. Testimonial css Strat
+----------------------------------------------------------------------------------*/
+.pl_testimonial_section{
+	float:left;
+	width:100%;
+	background-color:#f5f5f5;
+	padding-top:95px;
+	padding-bottom:50px;
+}
+.slider_wrap{
+	float:left;
+	width:100%;
+}
+.test_slider .test_content {
+    text-align: center;
+}
+.test_slider .test_content p{
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 30px;
+    color: #666666;
+    margin-bottom: 0;
+}
+.test_slider .test_content img{
+	display: inline-block;
+    margin: 30px 0;
+}
+.test_slider .test_content h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #2c97df;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    margin-top: 20px;
+}
+.test_slider .test_content h4{
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #444444;
+    margin:0;
+    text-transform: capitalize;
+	font-family: 'Poppins', sans-serif;
+	font-style: italic;
+}
+.test_slider .owl-dots{
+	margin-top:20px;
+	text-align:center;
+}
+/*----------------------------------------------------------------------------------
+10. Testimonial css End
+----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------
+11. About Page css Start
+----------------------------------------------------------------------------------*/
+.page_banner_section {
+    position: relative;
+    background-image: url(https://media.istockphoto.com/vectors/molecule-structure-gray-background-for-communication-vector-vector-id519131445);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+    z-index: 1;
+}
+.page_banner_section:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+.breadcrumb_wrap{
+	text-align: center;
+}
+.breadcrumb_wrap h3.page_heading {
+    color: #ffffff;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 44px;
+    margin-top:0px;
+    display: inline-block;
+}
+.pl_breadcrumb {
+    padding-left: 0px;
+    list-style: none;
+	text-align:center;
+	margin-bottom:0px;
+	font-size:14px;
+}
+.pl_breadcrumb > li {
+    display: inline-block;
+    color: #ffffff;
+    position: relative;
+    margin: 0 5px;
+}
+.pl_breadcrumb > li:after {
+    position: absolute;
+    content: "/";
+    font-size: 9px;
+    font-weight: bold;
+    top: 4px;
+    right: -9px;
+}
+.pl_breadcrumb > li:last-child:after {
+	display:none;
+}
+.pl_breadcrumb > li > a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 2px;
+}
+.pl_breadcrumb > li h5{
+	color:#ffffff;
+	margin:0;
+}
+/*----------------------------------------------------------------------------------
+11. About Page css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+12. Service Page css Start
+----------------------------------------------------------------------------------*/
+.service_page_section{
+	float:center;
+	width:100%;
+	background-color:#f5f5f5;
+	padding:95px 0 40px;
+}
+.service_icon_box{
+	text-align:center;
+	margin-bottom:60px;
+}
+.service_icon_box .service_icon > img {
+    display: inline-block;
+}
+.service_icon i {
+    color: #2c97df;
+    font-size: 40px;
+    margin-left: 0;
+}
+.service_icon_box h4 {
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    color: #151515;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.service_icon_box p {
+	font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: #555555;
+}
+.service_icon_box a {
+    color: #2c97df;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 17px;
+    display: inline-block;
+}
+/*----------------------------------------------------------------------------------
+12. Service Page css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+13. Price Page css Start
+----------------------------------------------------------------------------------*/
+.bg_gray {
+    background-color: #f5f5f5;
+}
+/*----------------------------------------------------------------------------------
+13. Price Page css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+14. contact Page css Start
+----------------------------------------------------------------------------------*/
+.pl_contact_section{
+	float:left;
+	width:100%;
+	background-color:#ffffff;
+	padding:80px 0 30px;
+}
+.contact_form {
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.contact_form .form-group{
+	margin-bottom:20px;
+}
+.contact_form .form-control {
+    border: 1px solid #999999;
+    height: 50px;
+}
+.contact_form .form-control.msg_box{
+	height:150px;
+}
+.contact_address {
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+}
+#err_msg p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+.address_cover{
+	text-align:center;
+	margin-bottom:30px;
+}
+.address_cover .address_icon i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100%;
+    background-color: #2c97df;
+    color: #fff;
+    font-size: 19px;
+    display: table;
+    margin-left:auto;
+    margin-right:auto;
+}
+.address_cover h3 {
+    font-size: 21px;
+    letter-spacing: 0.03em;
+    line-height: 21px;
+    color: #555555;
+    text-transform: capitalize;
+    margin: 18px 0 8px;
+}
+.address_cover p, .address_cover a {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #888888;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+/*==== Map css End ====*/
+.map_section{
+}
+#contact_map{
+	width:100%;
+	height:450px;
+}
+/*==== Map css End ==== */
+/*----------------------------------------------------------------------------------
+14. contact Page css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+15. Footer css Start
+----------------------------------------------------------------------------------*/
+.pl_footer_section{
+	float:left;
+	width:100%;
+	background-color:#292a2e;
+	padding:95px 0 0px;
+}
+.footer_widget{
+	margin-bottom:95px;
+	float:left;
+	width:100%;
+}
+.footer_widget .ftr_logo {
+    margin-bottom: 20px;
+}
+.footer_widget p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+    margin-bottom: 0;
+}
+.footer_widget .f_link {
+    color:#2c97df;
+	text-decoration:none;
+	font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
+.footer_widget .f_link:hover {
+    color: #f1f1f1;
+}
+.footer_widget .social_icon {
+   margin-top:5px;
+}
+.footer_widget .widget_heading {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    margin-bottom: 25px;
+}
+.footer_widget ul{
+	padding-left:0;
+	list-style:none;
+}
+.footer_widget ul > li > div {
+  display:inline-block;
+}
+.footer_widget ul > li > div.work_time {
+    float:right;
+}
+.newsletter_frm {
+    position: relative;
+    margin-top: 15px;
+    float: left;
+    width: 100%;
+}
+.newsletter_frm .form-control {
+    height: 55px;
+    background-color: transparent;
+    color: #999999;
+    border: 1px solid;
+	padding-right: 56px !important;
+}
+.address > li .ad_icon {
+    margin-right: 5px;
+    color: #fff;
+}
+.newsletter_frm .send_btn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: transparent;
+    border: none;
+    color: #999999;
+    text-transform: uppercase;
+    font-size: 15px;
+    height: 55px;
+    line-height: 55px;
+    border-left: 1px solid;
+}
+.footer_widget ul.working_shedule > li, .footer_widget ul.address > li {
+    border-bottom: 1px solid #444444;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+/*---- Footer css End -----*/
+/*---- Second Footer css Start -----*/
+.second_footer_section{
+	float:left;
+	width:100%;
+	background-color:#ffffff;
+	padding:44px 0px;
+	text-align: center;
+}
+.footer_text {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer_text p {
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 26px;
+    color: #212121;
+}
+.footer_text p a {
+    text-decoration: none;
+    color: #2c97df;
+}
+.footer_text p a:hover{
+	color:#151515;
+}
+/*---- Second Footer css End -----*/
+/*----------------------------------------------------------------------------------
+15. Footer css End
+----------------------------------------------------------------------------------*/
